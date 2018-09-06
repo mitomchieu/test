@@ -1,0 +1,437 @@
+.nav-icon {
+	font-size: 35px;
+	float: right;
+	display: none;
+	padding:  5px;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+.wrapper-header {
+	position: relative;
+}
+@media only screen and (max-width: 600px) {
+	#lhv_menu {
+		position: fixed;
+		top: 85px;
+		width:  100%;
+		background: #eff5f5;
+	}
+	.nav-courseware {
+		position: fixed;
+		top: 284px;
+		width:  100%;
+		background: #eff5f5;
+	}
+	.hide-on-mobile {
+		display: none;
+	}
+	.show-on-mobile {
+		display: inline-block;
+	}
+    .nav-courseware {
+		float: none !important;
+		width:  100%;
+		text-align: center;
+	}
+	.nav-courseware > div {
+		display: block;
+		text-align: center;
+		font-size: 30px;
+		padding: 20px 0;
+	}
+
+	.logo {
+		float: none;
+		text-align: left;
+	}
+
+	#lhv_menu > li ,.nav-courseware > .item > a{
+		float: none !important;
+		display: block!important;
+		/* text-align: left!important; */
+		padding: 0!important;
+		margin-top: 0!important;
+		text-align: center!important;
+		font-size: 30px !important;
+		padding: 20px !important;
+	}
+	.nav-global {
+		width: 100%;
+	}
+	.nav-courseware > .item > a{
+		font-size: 15px !important;
+	}
+}
+/* ///////////////////////////////////////////////////// */
+/*! CSS Used from: https://courses.lophocvui.com/static/edx.org/css/lms-main-v1.f5da14210ba1.css */
+ header,nav{
+    display:block;
+}
+ a{
+    color:#005584;
+}
+ a:visited{
+    color:#003655;
+}
+ a:hover,a:focus{
+    color:#0079BC;
+}
+ ul{
+    margin:1em 0;
+    padding:0 0 0 40px;
+}
+ nav ul{
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+}
+ img{
+    border:0;
+    -ms-interpolation-mode:bicubic;
+    vertical-align:middle;
+}
+ @media print{
+     *{
+        background:transparent;
+        color:black!important;
+        box-shadow:none!important;
+        text-shadow:none!important;
+        filter:none!important;
+        -ms-filter:none!important;
+    }
+     a,a:visited{
+        text-decoration:underline;
+    }
+     img{
+        page-break-inside:avoid;
+    }
+     img{
+        max-width:100%!important;
+    }
+     p,h3{
+        orphans:3;
+        widows:3;
+    }
+     h3{
+        page-break-after:avoid;
+    }
+}
+ a:disabled,a:visited:disabled{
+    pointer-events:none;
+    outline:none;
+    cursor:default;
+}
+ .header-global-new{
+    z-index:10;
+}
+ h1,h3{
+    color:#3c3c3c;
+    font:normal 1.2em/1.2em Georgia,Cambria,"Times New Roman",Times,serif;
+    margin:0;
+    font-family:"Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+}
+ h1{
+    color:#3c3c3c;
+    font:normal 2em/1.4em "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+    letter-spacing:1px;
+    margin-bottom:30px;
+    text-align:center;
+    font-family:"Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+}
+ p{
+    color:inherit;
+    margin:0;
+}
+ p+p{
+    margin-top:20px;
+}
+ a,a:visited{
+    color:#0075b4;
+    font:inherit;
+    text-decoration:none;
+    transition:all 0.1s linear 0s;
+}
+ a:hover,a:focus,a:visited:hover,a:visited:focus{
+    color:#065683;
+    text-decoration:underline;
+}
+ a:disabled,a:visited:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+ .btn{
+    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ .header-global-new{
+    box-sizing:border-box;
+    position:relative;
+    width:100%;
+    border-bottom:1px solid #919191;
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.1);
+    background:#fff;
+}
+ .header-global-new .wrapper-header{
+    box-sizing:border-box;
+    height:74px;
+    margin:0 auto;
+    padding:17px 0;
+    max-width:1180px;
+}
+ .header-global-new .wrapper-header:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+ .header-global-new h1.logo{
+    float:left;
+    margin:-2px 39px 0 10px;
+    position:relative;
+}
+ .header-global-new h1.logo a{
+    display:block;
+}
+ .header-global-new .nav-global{
+    float:left;
+}
+ .header-global-new .nav-global #lhv_menu{
+    list-style:none;
+}
+ .header-global-new .nav-global #lhv_menu li{
+    float:left;
+    text-align:center;
+    position:relative;
+    padding:25px 0;
+    margin-top:-25px;
+}
+ .header-global-new .nav-global #lhv_menu li a{
+    font-family:"Open Sans",Arial,Helvetica,sans-serif;
+    color:#0075b4;
+    display:block;
+    outline:0;
+    text-decoration:none;
+    padding:3px 10px;
+    font-size:15px;
+    line-height:1.5;
+    font-weight:600;
+}
+ .header-global-new .nav-global #lhv_menu li li a{
+    font-family:"Open Sans",Arial,Helvetica,sans-serif;
+    color:#0075b4;
+    display:block;
+    outline:0;
+    text-decoration:none;
+    padding:7px 5px;
+    line-height:1.5;
+    font-weight:600;
+    text-transform:none;
+    margin-left:-10px;
+}
+ .header-global-new .nav-global .dropdown_4columns{
+    border-top:4px solid #0075b4;
+    margin-left:-257px;
+    float:left;
+    position:absolute;
+    left:-999em;
+    text-align:left;
+    padding:10px 5px 10px 5px;
+    background:#eeeff3;
+    width:1200px;
+    margin-top:24px;
+}
+ .header-global-new .nav-global .dropdown_4columns_home{
+    border-top:4px solid #0075b4;
+    margin-left:-150px;
+    float:left;
+    position:absolute;
+    left:-999em;
+    text-align:left;
+    padding:10px 5px 10px 5px;
+    background:#eeeff3;
+    width:1200px;
+    margin-top:24px;
+}
+ .header-global-new .nav-global #lhv_menu li:hover{
+    background-color:#007db8;
+}
+ .header-global-new .nav-global #lhv_menu li:hover a{
+    color:#fff;
+}
+ .header-global-new .nav-global #lhv_menu li:hover .dropdown_4columns{
+    left:-1px;
+    top:auto;
+}
+ .header-global-new .nav-global #lhv_menu li:hover .dropdown_4columns_home{
+    left:-1px;
+    top:auto;
+}
+ .header-global-new .nav-global .col_1{
+    width:290px;
+    display:inline;
+    float:left;
+    position:relative;
+    margin-left:5px;
+    margin-right:5px;
+}
+ .header-global-new .nav-global .col_1 h3{
+    font-weight:600;
+}
+ .header-global-new .nav-global #lhv_menu p,.header-global-new .nav-global #lhv_menu h3,.header-global-new .nav-global #lhv_menu ul li{
+    font-family:"Open Sans",Arial,Helvetica,sans-serif;
+    line-height:21px;
+    font-size:12px;
+    text-align:left;
+}
+ .header-global-new .nav-global #lhv_menu h3{
+    font-size:16px;
+    margin:7px 0 14px 0;
+    padding-bottom:7px;
+    color:#000;
+}
+ .header-global-new .nav-global #lhv_menu p{
+    line-height:18px;
+    margin:10px 0 0px 0;
+    font-weight:600;
+    font-size:14px;
+    margin:10px 30px 0px 0px;
+    color:#000;
+    text-transform:capitalize;
+}
+ .header-global-new .nav-global #lhv_menu li:hover div a{
+    font-size:15px;
+    color:#000;
+}
+ .header-global-new .nav-global #lhv_menu li:hover div a:hover{
+    color:#007db8;
+}
+ .header-global-new .nav-global #lhv_menu li ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 12px 0;
+}
+ .header-global-new .nav-global #lhv_menu li ul li{
+    font-size:12px;
+    line-height:24px;
+    position:relative;
+    padding:0;
+    margin:0 5px;
+    float:none;
+    text-align:left;
+    width:290px;
+}
+ .header-global-new .nav-global #lhv_menu li ul li:hover{
+    background:none;
+    border:none;
+    padding:0;
+    margin:0 5px;
+    text-decoration:underline;
+}
+ @media screen and (max-width: 600px){
+     .header-global-new .nav-global .dropdown_4columns_home{
+        display:none;
+    }
+}
+ .header-global-new .nav-account-management{
+    margin:0 auto;
+}
+ .header-global-new .nav-global,.header-global-new .nav-courseware{
+    margin-top:5px;
+    list-style:none;
+    float:left;
+}
+ .header-global-new .nav-global li,.header-global-new .nav-global div,.header-global-new .nav-courseware div{
+    display:inline-block;
+    margin:0;
+    text-transform:uppercase;
+    letter-spacing:0!important;
+}
+ .header-global-new .nav-global li a,.header-global-new .nav-global div a,.header-global-new .nav-courseware div a{
+    display:block;
+    padding:3px 10px;
+    font-size:14px;
+    line-height:1.5;
+    font-weight:600;
+    font-family:"Open Sans",Arial,Helvetica,sans-serif;
+    color:#0075b4;
+}
+ .header-global-new .nav-global li a:hover,.header-global-new .nav-global li a:focus,.header-global-new .nav-global div a:hover,.header-global-new .nav-courseware div a:hover,.header-global-new .nav-global div a:focus,.header-global-new .nav-courseware div a:focus{
+    text-decoration:none;
+    color:#333435;
+}
+ .header-global-new .nav-courseware{
+    float:right;
+}
+ .header-global-new .nav-courseware div{
+    display:inline-block;
+    text-transform:uppercase;
+    letter-spacing:0!important;
+    position:relative;
+}
+ .header-global-new .nav-courseware div:last-child{
+    margin-right:10px;
+}
+ @media print{
+     a[href]:after{
+        content:none!important;
+    }
+}
+ a:disabled,a:visited:disabled{
+    pointer-events:none;
+    outline:none;
+    cursor:default;
+}
+ .header-global-new{
+    z-index:10;
+}
+/*! CSS Used fontfaces */
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.39d27e13dce3.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.df04ed7fc7d8.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.557ad65e492b.ttf") format("truetype");
+    font-weight:300;
+    font-style:normal;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.e7cc7120e670.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.02d04d22784f.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.05e99ea9cf0b.ttf") format("truetype");
+    font-weight:300;
+    font-style:italic;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.55835483c304.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.87119b577169.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.4c7e867ae422.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.383eba0e55ed.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.b9812e74f089.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.2416d120632b.ttf") format("truetype");
+    font-weight:400;
+    font-style:italic;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.08952b029e4d.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.dbbfd9e667c7.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.f75c4b742376.ttf") format("truetype");
+    font-weight:600;
+    font-style:normal;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.3343e5436871.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.f386291c234e.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.e84740526b8c.ttf") format("truetype");
+    font-weight:600;
+    font-style:italic;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.3326e4d74d39.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.6dbaf63547f2.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.ad0eb070a07f.ttf") format("truetype");
+    font-weight:700;
+    font-style:normal;
+}
+ @font-face{
+    font-family:'Open Sans';
+    src:url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.5aaceea2d60d.woff2") format("woff2"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.7dae097d5db8.woff") format("woff"),url("https://courses.lophocvui.com/static/edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.f9103010ab55.ttf") format("truetype");
+    font-weight:700;
+    font-style:italic;
+}
+
+
