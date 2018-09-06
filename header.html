@@ -1,14 +1,32 @@
+<head>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <script type="text/javascript">
+	 	function hide_or_show() {
+	 		nav1 = document.getElementById('nav1');
+			nav2 = document.getElementById('nav2');
+	 		if (nav1.classList.contains('hide-on-mobile')) {
+	 			nav1.classList.remove('hide-on-mobile');
+	 			nav2.classList.remove('hide-on-mobile');
+	 		}
+	 		else {
+	 			nav1.classList.add('hide-on-mobile');
+	 			nav2.classList.add('hide-on-mobile');
+	 		}
+	 	}
+	 </script>
+</head>
 <header class="header-global-new" aria-label="Main" role="banner">
   <div class=" wrapper-header nav-container">
     <h1 class="logo" itemscope="" itemtype="http://schema.org/Organization">
       <a href="/" itemprop="url">
         
-            <img src="/static/edx.org/images/logo.a5747c5f695e.png" alt="LopHocVui Trang chủ" itemprop="logo">
+            <img src="https://courses.lophocvui.com/static/edx.org/images/logo.a5747c5f695e.png" alt="LopHocVui Trang chủ" itemprop="logo">
         
       </a>
     </h1>
 	<nav aria-label="Main" class="nav-main">
-	<nav class="left list-inline nav-global">
+	<nav class="left list-inline nav-global hide-on-mobile" id="nav1">
 	<a href="#" id="menu-icon"></a>
 	<ul id="lhv_menu">
 		<li class="drop">
@@ -148,7 +166,7 @@
 
 
       <nav aria-label="Account" class="nav-account-management">
-        <div class="right nav-courseware list-inline">
+        <div class="right nav-courseware list-inline hide-on-mobile" id="nav2">
           <div class="item nav-courseware-01">
                 <a class="btn btn-login" href="/login">Đăng Nhập</a>
           </div>
@@ -157,5 +175,8 @@
               </div>
         </div>
       </nav>
+      <i class="fa fa-bars nav-icon show-on-mobile" onclick="hide_or_show()">
+      </i>
   </div>
 </header>
+
